@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <title>Blog</title>
+</head>
+<body>
+    <main class="m-5 p-5">
+        <h3 class="text-4xl text-sky-800 font-bold">Blog Page</h3>
+        <p class="text-red-300">What is DOM and what is the purpose of DOM?</p>
+        <p class="text-indigo-200">The Document Object Model (DOM) is a programming interface for HTML  documents. It represents the structure of a document as a tree-like model, where each element in the document (such as an HTML tag, attribute, or text node) is represented as an object in the tree. <span class="text-blue-400"> The DOM allows developers to manipulate and interact with HTML documents and its purpose is to create dynamic and interactive web pages.</span></p>
+        <br>
+        <p class="text-red-300">How will you select HTML elements using DOM? Name the DOM methods.</p>
+        <p class="text-indigo-200">To select HTML elements using DOM use: <code class="text-purple-300">document.getElementsByName()</code></p>
+        <p class="text-red-300">DOM methods:</p>
+        <div class="grid grid-cols-2 gap-8">
+             <ul class="list-outside list-disc px-12">
+                <li><span class="text-orange-300">getElementById():</span> Selects an element with a specific ID attribute.</li>
+                <li><span class="text-orange-300">getElementsByClassName(): </span>Selects elements with a specific class name.</li>
+                <li><span class="text-orange-300">getElementsByTagName(): </span>Selects elements with a specific tag name.</li>
+                <li><span class="text-orange-300">querySelector(): </span>Selects first element that matches a specific CSS selector.</li>
+                <li><span class="text-orange-300">querySelectorAll(): </span>Selects all elements that match a specific CSS selector.</li>
+                <li><span class="text-orange-300">createElement(): </span>Creates a new element with the specified tag name.</li>
+                <li><span class="text-orange-300">removeChild(): </span>Removes a child node from an element.</li>
+                <li><span class="text-orange-300">replaceChild(): </span>Replaces a child node with a new node.</li>
+                <li><span class="text-orange-300">innerHTML(): </span>Gets or sets the HTML content of an element.</li>
+                <li><span class="text-orange-300">style(): </span>Gets or sets the CSS style of an element.</li>
+                <li><span class="text-orange-300">addEventListener(): </span>Attaches an event listener to an element.</li>
+                <li><span class="text-orange-300">removeEventListener():</span> Removes an event listener from an element.</li>
+                <li><span class="text-orange-300">getAttribute(): </span>Gets the value of a specific attribute of an element.</li>
+                <li><span class="text-orange-300">setAttribute(): </span>Sets the value of a specific attribute of an element.</li>              
+             </ul>
+             <div>
+                <img class="w-[50%]" src="/1920px-DOM-model.svg.png" alt="">
+             </div>
+        </div>
+         <br>
+            <div>
+                <p class="text-red-300">What is event bubble?</p>
+                <p class="text-indigo-200">Event bubbling is a type of DOM event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors of the target element in the same nesting hierarchy till it reaches the outermost DOM element or document object.</p>
+                <br>
+                <p class="text-red-300">What is a callback function and why will you use it?</p>
+                <p class="text-indigo-200">A callback function is a function that is passed as an argument to another function and is intended to be called after the first function has completed its task. The primary purpose of a callback function is to allow the calling function to execute some logic after the called function has completed its work.
+                Callbacks are commonly used in asynchronous programming, event handling, and functional programming to provide a way for a function to delegate the execution of certain logic to another function. They are often used in situations where a function needs to perform some asynchronous operation, such as fetching data from a server or waiting for user input, and then execute some logic when the operation is complete.</p>
+            </div>   
+    </main> 
+</body>
+</html>
